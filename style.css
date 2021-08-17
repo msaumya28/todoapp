@@ -1,0 +1,12 @@
+.oval {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.completed-card {
+    background-color: #ccc;
+}
+
+label {
+    font-weight: bold;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link href="style.css" rel="stylesheet">
+    <title>ToDoApp</title>
+
+</head>
+
+
+<body>
+    <div class="contaier">
+        <div class="row mt-5">
+            <div class="col-5 offset-3 mt-5">
+                <h1 class="text-center">To Do APP</h1>
+                <form id="todoForm">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control border border-dark" id="title" placeholder="Title" required="">
+
+                    </div>
+                    <div class="form-group mt-5">
+                        <label for="note">Note</label>
+                        <textarea class="form-control border border-dark" id="note" rows="3" placeholder="Note" required=""></textarea>
+
+                    </div>
+                    <div class="d-flex flex-row-reverse">
+
+                        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                    </div>
+                </form>
+                <h2 class="text-success" id="successMsg"></h2>
+            </div>
+        </div>
+
+        <hr class="col-5 offset-3">
+
+        <div class="row">
+            <div class="col-5 offset-3">
+                <button class="btn btn-primary oval">All</button>
+                <button class=" btn btn-outline-danger oval ml-2">Active</button>
+                <button class="btn btn-outline-success oval mr-2">Completed</button>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-5 offset-3 " id="todoList">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="main.js">
+    </script>
+</body>
+
+</html>
